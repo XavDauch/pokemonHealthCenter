@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .shown {
+    display: block !important;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: roboto, sans-serif;
+  }
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: coral;
+    height: 100px;
+    width: 100%;
+  }
+  .cards {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .card-img {
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("http://placekitten.com/200/300");
+    height: 200px;
+    width: 100%;
+  }
+  .card-body {
+    padding: 10px 20px;
+  }
+  .card-body h2 {
+    margin: 10px 0px;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .pokemon-type {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #a9a9a9;
+    margin-right: 8px;
+  }
+  
+  .pokemon-type:last {
+    margin-right: 0;
+  }
+  
+  
+  .loader-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.495);
+  }
+  
+  /* 
+   LOADER from : https://loading.io/css/
+  */
+  .lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid coral;
+    border-color: rgb(10, 246, 69) transparent rgb(10, 246, 69) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+  }
+  
+  .pagination {
+    display: none;
+  }
+  
+  .pagination-element {
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: bold;
+    border: 1px solid coral;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .pagination-element:last {
+    margin-right: 0;
+  }
+  
+  .pagination-element:hover {
+    background-color: #bcbbbb;
+  }
+  
+  .pagination-element.active {
+    background-color: coral;
+    cursor: none;
+  }
+  
+  
